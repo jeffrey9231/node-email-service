@@ -4,6 +4,7 @@ import { createSendGrid, createMailGund } from "../../services/email";
 
 export const create = async ({ body }, res) => {
   try {
+    console.log('create')
     await createMailGund(body);
     res.status(201).json("Send email by MailGund");
     // catch error from MailGund api
