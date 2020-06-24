@@ -1,5 +1,5 @@
 swagger: '2.0'
-host: https://node-webservice-jeffrey9231.herokuapp.com/
+host: node-webservice-jeffrey9231.herokuapp.com/
 basePath: /v1
 info:
   title: SiteMinder - Tech Challenge Sample
