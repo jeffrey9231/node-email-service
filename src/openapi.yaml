@@ -1,0 +1,91 @@
+swagger: '2.0'
+host: localhost:3000
+basePath: /v1
+info:
+  title: SiteMinder - Tech Challenge Sample
+  version: '3.0.0'
+definitions:
+  400Error:
+    properties:
+      message:
+        type: string
+      
+  500Error:
+    properties:
+      message:
+        type: string
+      errors:
+        type: string
+        
+  EmailDetail:
+    properties:
+      subject:
+        type: string
+        example: 'Email subject'
+      content:
+        type: string
+        example: 'Email contents'
+      emailTo:
+        type: array
+        items:
+          type: object
+          properties:
+            email:
+              type: string
+            name:
+              type: string
+        example:
+          - email: xxxxx@gmail.com
+            name: Jessica Smith
+      emailCc:
+        type: array
+        items:
+          type: object
+          properties:
+            email:
+              type: string
+            name:
+              type: string
+        example:
+          - email: xxxxx@gmail.com
+            name: Jessica Smith
+          - email: xxxxx@gmail.com
+            name: Ron Stewart
+      emailBcc:
+        type: array
+        items:
+          type: object
+          properties:
+            email:
+              type: string
+            name:
+              type: string
+        example:
+          - email: xxxxx@gmail.com
+          - email: xxxxx@gmail.com
+    required:
+      - subject
+      - content
+      - emailTo
+      
+paths:
+  /email:
+    post:
+      description: Send emails.
+      operationId: createEmails
+      parameters:
+        - name: email
+          in: body
+          schema:
+            $ref: '#/definitions/EmailDetail'
+      responses:
+        201:
+          description: Returning success on service status
+        400:
+          description: Validation Error
+          schema:
+            $ref: '#/definitions/400Error'
+        500:
+          description: Server Error
+          schema:
+            $ref: '#/definitions/500Error'
