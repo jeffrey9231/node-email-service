@@ -31,14 +31,12 @@ const config = {
     sendGridApiUrl:
       process.env.SENDGRID_API_URL || "https://api.sendgrid.com/v3/mail/send",
     sendGridApiKey:
-      process.env.SENDGRID_API_KEY ||
-      "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",
+      process.env.SENDGRID_API_KEY || '',
     mailgunApiUrl:
       process.env.MAILGUN_API_URL ||
       "https://api.mailgun.net/v3/jeffrey9231.mydomain.com/messages",
     mailgunApiKey:
-      process.env.MAILGUN_API_KEY ||
-      "9ad68c78ddfa149cae1b842b0b7f2f3e-468bde97-55437a44",
+      process.env.MAILGUN_API_KEY || '',
   },
   test: {},
   development: {},
