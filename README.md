@@ -111,9 +111,9 @@ Deploy project with [Heroku](https://devcenter.heroku.com/) and Heroku CLI.
 
 ###### Mailgun:
 Already set up CDN for Mailgun but my domain still not get verified.
-Still can get through Mailgun API successfully if there only have **one** recipient
+Still can get through Mailgun API successfully if there only have **one** recipient.
 Will get `The domain is unverified and requires DNS configuration. Log in to your control panel to view required DNS records` error once have multiple recipients.
-The request body separates multiple recipients with commas base on their document but still get this error.
+The request body separates multiple recipients with commas base on the API document but still get this error.
 
 
 ###### Sendgrid:
