@@ -44,8 +44,6 @@ const createSendGrid = async (body) => {
 };
 
 const createMailGund = async (body) => {
-    console.log('createMailGund')
-
   let header = INITIAL_MAILGUND_HEADER(mailgunApiKey);
   let payload = INITIAL_MAILGUND_BODY();
 
@@ -74,7 +72,6 @@ const createMailGund = async (body) => {
   }
 
   await api.post(mailgunApiUrl, qs.stringify(payload), header);
-  console.log('api')
   return;
 };
 

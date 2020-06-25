@@ -62,7 +62,9 @@ definitions:
               type: string
         example:
           - email: xxxxx@gmail.com
+            name: Jess Smith
           - email: xxxxx@gmail.com
+            name: Ron Ste
     required:
       - subject
       - content
