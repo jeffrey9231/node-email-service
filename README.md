@@ -21,6 +21,13 @@ Need to install [node](https://nodejs.org/en/download/) as the run time environm
 npm install && npm run dev
 ```
 
+## Test
+
+
+```bash
+npm run test
+```
+
 ## Tech
 * [Joi](https://www.npmjs.com/package/joi) - JavaScript Input Validation
 * [Jest](https://jestjs.io/) - JavaScript Testing Framework
