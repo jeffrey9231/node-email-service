@@ -39,7 +39,7 @@ npm run test
 
 ## API
 
-#### GEY /api-docs
+#### GET /api-docs
 This endpoint will serve the API specification
 
 #### POST /v1/email
