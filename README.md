@@ -39,6 +39,9 @@ npm run test
 
 ## API
 
+#### GEY /api-docs
+This endpoint will serve the API specification
+
 #### POST /v1/email
 
 This endpoint allows you to send an email over SendGrid or Mailgun.
